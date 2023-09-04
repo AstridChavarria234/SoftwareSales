@@ -1,0 +1,50 @@
+﻿@page "/countries"
+@inject IRepository repository
+<h3>Paises</h3>
+
+@if (countries is null)
+{
+    <p>Cargando...</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th> País</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var country in countries)
+            {
+                 <tr>
+                     <td>@country.Name</td>
+                     <td></td>
+                 </tr>
+            }
+        </tbody>
+
+    </table>
+}
+@code {
+    private List<Country>? countries;
+
+    protected override  async Task OnInitializedAsync()
+    {
+        var response = await repository.GetAsync<List<Country>>("api/countries");
+        if (response.Error)
+        {
+            //TODO : Pending to implement
+            return;
+        }
+        countries = response.Response;
+
+
+
+
+
+    }
+
+
+}

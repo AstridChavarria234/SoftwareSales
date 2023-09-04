@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sales.Shared", "Sales.Shared\Sales.Shared.csproj", "{8E9F03A9-79C8-46E7-BF44-6007CE6838D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sales.Shared", "Sales.Shared\Sales.Shared.csproj", "{8E9F03A9-79C8-46E7-BF44-6007CE6838D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sales.Backend", "Sales.Back\Sales.Backend.csproj", "{BC3EE088-9018-48EE-AB1A-179F770F7492}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sales.Backend", "Sales.Back\Sales.Backend.csproj", "{BC3EE088-9018-48EE-AB1A-179F770F7492}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sales.Frontend", "Sales.Frontend\Sales.Frontend.csproj", "{40AC5C7A-65CA-4233-AEF1-D449304ED465}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sales.Frontend", "Sales.Frontend\Sales.Frontend.csproj", "{40AC5C7A-65CA-4233-AEF1-D449304ED465}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
